@@ -19,7 +19,7 @@
             <div class="content-wrapper">
                 <!-- Content -->
                 <div class="container-xxl flex-grow-1 container-p-y">
-                    <h5 class="mb-4"><span class="text-muted fw-light">System Admin /</span> Company Info</h5>
+                    <h5 class="mb-4"><span class="text-muted fw-light">System Admin /</span> Company Info Deenabandhu</h5>
                     <div class="row">
                         <div class="col-md-12">
                             <ul class="nav nav-pills flex-column flex-md-row mb-3 gap-2 gap-lg-0">
