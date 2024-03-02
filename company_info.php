@@ -24,7 +24,7 @@
             <div class="content-wrapper">
                 <!-- Content -->
                 <div class="container-xxl flex-grow-1 container-p-y">
-                    <h5 class="mb-4"><span class="text-muted fw-light">System Admin /</span> Company Info new</h5>
+                    <h5 class="mb-4"><span class="text-muted fw-light">System Admin /</span> Company Info</h5>
                     <div class="row">
                         <div class="col-12 mb-4">
                           <div
