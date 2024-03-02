@@ -24,13 +24,13 @@
                 <div class="content-wrapper">
                     <!-- Content -->
                     <div class="container-xxl flex-grow-1 container-p-y">
-                        <h5 class="mb-4"><span class="text-muted fw-light">System Admin /</span> Company Info</h5>
+                        <h5 class="mb-4"><span class="text-muted fw-light">System Admin /</span> Branch Info</h5>
                         <div class="row">
                             <div class="col-12 mb-4">
                               <div
                                 class="bs-stepper wizard-vertical vertical wizard-vertical-icons-example wizard-vertical-icons mt-2">
                                 <div class="bs-stepper-header gap-lg-2">
-                                  <div class="step" data-target="#account-details-1">
+                                  <div class="step" data-target="#branch-details">
                                     <button type="button" class="step-trigger">
                                       <span class="avatar">
                                         <span class="avatar-initial rounded-2">
@@ -38,11 +38,11 @@
                                         </span>
                                       </span>
                                       <span class="bs-stepper-label flex-column align-items-start gap-1 ms-2">
-                                        <span class="bs-stepper-title">Details</span>
+                                        <span class="bs-stepper-title">Basic Details</span>
                                       </span>
                                     </button>
                                   </div>
-                                  <div class="step" data-target="#personal-info-1">
+                                  <div class="step" data-target="#brand-info">
                                     <button type="button" class="step-trigger">
                                       <span class="avatar">
                                         <span class="avatar-initial rounded-2">
@@ -54,19 +54,7 @@
                                       </span>
                                     </button>
                                   </div>
-                                  <div class="step" data-target="#social-links-1">
-                                    <button type="button" class="step-trigger">
-                                      <span class="avatar">
-                                        <span class="avatar-initial rounded-2">
-                                          <i class="mdi mdi-handshake mdi-24px"></i>
-                                        </span>
-                                      </span>
-                                      <span class="bs-stepper-label flex-column align-items-start gap-1 ms-2">
-                                        <span class="bs-stepper-title">Business Details</span>
-                                      </span>
-                                    </button>
-                                  </div>
-                                  <div class="step" data-target="#social-contactinfo">
+                                  <div class="step" data-target="#branch-contactinfo">
                                     <button type="button" class="step-trigger">
                                       <span class="avatar">
                                         <span class="avatar-initial rounded-2">
@@ -78,37 +66,13 @@
                                       </span>
                                     </button>
                                   </div>
-                                  <div class="step" data-target="#social-socialdetails">
-                                    <button type="button" class="step-trigger">
-                                      <span class="avatar">
-                                        <span class="avatar-initial rounded-2">
-                                          <i class="mdi mdi-instagram mdi-24px"></i>
-                                        </span>
-                                      </span>
-                                      <span class="bs-stepper-label flex-column align-items-start gap-1 ms-2">
-                                        <span class="bs-stepper-title">Social Details</span>
-                                      </span>
-                                    </button>
-                                  </div>
-                                    <div class="step" data-target="#social-otherdetails">
-                                        <button type="button" class="step-trigger">
-                                          <span class="avatar">
-                                            <span class="avatar-initial rounded-2">
-                                              <i class="mdi mdi-plus-box-multiple mdi-24px"></i>
-                                            </span>
-                                          </span>
-                                          <span class="bs-stepper-label flex-column align-items-start gap-1 ms-2">
-                                            <span class="bs-stepper-title">Add new</span>
-                                          </span>
-                                        </button>
-                                    </div>
                                 </div>
                                 <div class="bs-stepper-content">
                                   <form onSubmit="return false">
                                     <!-- Account Details -->
-                                    <div id="account-details-1" class="content">
+                                    <div id="branch-details" class="content">
                                       <div class="content-header mb-3">
-                                        <h6 class="mb-0">Details</h6>
+                                        <h6 class="mb-0">Basic Details</h6>
                                       </div>
                                        <div class="row g-4">
                                             <div class="col-md-4">
@@ -270,69 +234,11 @@
                                       </div>
                                     </div>
                                     <!-- Personal Info -->
-                                    <div id="personal-info-1" class="content">
+                                    <div id="brand-info" class="content">
                                        <div class="content-header mb-3">
                                         <h6 class="mb-0">Brand Info</h6>
                                        </div>
                                         <div class="row g-4">
-                                            <div class="col-sm-6">
-                                                <div class="card-body">
-                                                  <div class="d-flex align-items-start align-items-sm-center gap-4">
-                                                    <img
-                                                      src="assets/img/avatars/suryalogo.png"
-                                                      alt="user-avatar"
-                                                      class="d-block w-px-120 h-px-120 rounded"
-                                                      id="uploadedAvatar" />
-                                                    <div class="button-wrapper">
-                                                      <label for="upload" class="btn btn-primary me-2 mb-3" tabindex="0">
-                                                        <span class="d-none d-sm-block">Upload Logo</span>
-                                                        <i class="mdi mdi-tray-arrow-up d-block d-sm-none"></i>
-                                                        <input
-                                                          type="file"
-                                                          id="upload"
-                                                          class="account-file-input"
-                                                          hidden
-                                                          accept="image/png, image/jpeg" />
-                                                      </label>
-                                                      <button type="button" class="btn btn-outline-danger account-image-reset mb-3">
-                                                        <i class="mdi mdi-reload d-block d-sm-none"></i>
-                                                        <span class="d-none d-sm-block">Reset</span>
-                                                      </button>
-
-                                                      <div class="small">Allowed JPG, GIF or PNG. Max size of 800K</div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="card-body">
-                                                  <div class="d-flex align-items-start align-items-sm-center gap-4">
-                                                    <img
-                                                      src="assets/img/icons/brands/fac.png"
-                                                      alt="user-avatar"
-                                                      class="d-block w-px-120 h-px-120 rounded"
-                                                      id="uploadedAvatar" />
-                                                    <div class="button-wrapper">
-                                                      <label for="upload" class="btn btn-primary me-2 mb-3" tabindex="0">
-                                                        <span class="d-none d-sm-block">Favicon</span>
-                                                        <i class="mdi mdi-tray-arrow-up d-block d-sm-none"></i>
-                                                        <input
-                                                          type="file"
-                                                          id="upload"
-                                                          class="account-file-input"
-                                                          hidden
-                                                          accept="image/png, image/jpeg" />
-                                                      </label>
-                                                      <button type="button" class="btn btn-outline-danger account-image-reset mb-3">
-                                                        <i class="mdi mdi-reload d-block d-sm-none"></i>
-                                                        <span class="d-none d-sm-block">Reset</span>
-                                                      </button>
-
-                                                      <div class="small">Allowed JPG, GIF or PNG. Max size of 800K</div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                            </div>
                                              <div class="col-sm-6">
                                                 <div class="card-body">
                                                   <div class="d-flex align-items-start align-items-sm-center gap-4">
@@ -404,32 +310,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Social Links -->
-                                    <div id="social-links-1" class="content">
-                                      <div class="content-header mb-3">
-                                        <h6 class="mb-0">Business Details</h6>
-                                      </div>
-                                      <div class="row g-4">
-                                        <div class="col-sm-12">
-                                            <div class="form-floating form-floating-outline">
-                                                <textarea name="address" class="form-control" id="address" rows="2" placeholder="1456, Mall Road" style="height: 100px;"></textarea>
-                                                 <label for="address">Address</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 d-flex justify-content-between">
-                                          <button class="btn btn-outline-secondary btn-prev">
-                                            <i class="mdi mdi-arrow-left me-sm-1 me-0"></i>
-                                            <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                                          </button>
-                                          <button class="btn btn-primary btn-next">
-                                            <span class="align-middle d-sm-inline-block d-none me-sm-1">Next</span>
-                                            <i class="mdi mdi-arrow-right"></i>
-                                          </button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <!-- Social Links -->
-                                    <div id="social-contactinfo" class="content">
+                                    <div id="branch-contactinfo" class="content">
                                       <div class="content-header mb-3">
                                         <h6 class="mb-0">Contact Info</h6>
                                       </div>
@@ -476,132 +357,15 @@
                                                 <label for="WhatsApp No">WhatsApp No</label>
                                             </div>
                                         </div>
-                                      <!--   <div class="col-12 d-flex justify-content-between">
-                                          <button class="btn btn-outline-secondary btn-prev">
-                                            <i class="mdi mdi-arrow-left me-sm-1 me-0"></i>
-                                            <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                                          </button>
-                                          <button class="btn btn-primary btn-submit">Submit</button>
-                                        </div> -->
-                                          <div class="col-12 d-flex justify-content-between">
-                                          <button class="btn btn-outline-secondary btn-prev">
-                                            <i class="mdi mdi-arrow-left me-sm-1 me-0"></i>
-                                            <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                                          </button>
-                                          <button class="btn btn-primary btn-next">
-                                            <span class="align-middle d-sm-inline-block d-none me-sm-1">Next</span>
-                                            <i class="mdi mdi-arrow-right"></i>
-                                          </button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div id="social-socialdetails" class="content">
-                                      <div class="content-header mb-3">
-                                        <h6 class="mb-0">Social Details</h6>
-                                      </div>
-                                      <div class="row g-4">
-                                        <div class="col-md-4">
-                                            <div class="form-floating form-floating-outline">
-                                                <input class="form-control" type="text" id=""
-                                                    name="Name" value="Alias" placeholder="Name" autofocus />
-                                                <label for="Name">Name</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="form-floating form-floating-outline">
-                                                <input class="form-control" type="text" id=""
-                                                    name="URL" value="" placeholder="URL" autofocus />
-                                                <label for="URL">URL</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="form-floating form-floating-outline">
-                                                <input class="form-control" type="text" name="Role"
-                                                    id="" value=""placeholder="Role" />
-                                                <label for="Role">Role</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="card-body">
-                                              <div class="d-flex align-items-start align-items-sm-center gap-4">
-                                                <img
-                                                  src="assets/img/icons/brands/fac.png"
-                                                  alt="user-avatar"
-                                                  class="d-block w-px-120 h-px-120 rounded"
-                                                  id="uploadedAvatar" />
-                                                <div class="button-wrapper">
-                                                  <label for="upload" class="btn btn-primary me-2 mb-3" tabindex="0">
-                                                    <span class="d-none d-sm-block">Social Icons</span>
-                                                    <i class="mdi mdi-tray-arrow-up d-block d-sm-none"></i>
-                                                    <input
-                                                      type="file"
-                                                      id="upload"
-                                                      class="account-file-input"
-                                                      hidden
-                                                      accept="image/png, image/jpeg" />
-                                                  </label>
-                                                  <button type="button" class="btn btn-outline-danger account-image-reset mb-3">
-                                                    <i class="mdi mdi-reload d-block d-sm-none"></i>
-                                                    <span class="d-none d-sm-block">Reset</span>
-                                                  </button>
-
-                                                  <div class="small">Allowed JPG, GIF or PNG. Max size of 800K</div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                        </div>
-                                      <!--   <div class="col-12 d-flex justify-content-between">
-                                          <button class="btn btn-outline-secondary btn-prev">
-                                            <i class="mdi mdi-arrow-left me-sm-1 me-0"></i>
-                                            <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                                          </button>
-                                          <button class="btn btn-primary btn-submit">Submit</button>
-                                        </div> -->
-                                          <div class="col-12 d-flex justify-content-between">
-                                          <button class="btn btn-outline-secondary btn-prev">
-                                            <i class="mdi mdi-arrow-left me-sm-1 me-0"></i>
-                                            <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                                          </button>
-                                          <button class="btn btn-primary btn-next">
-                                            <span class="align-middle d-sm-inline-block d-none me-sm-1">Next</span>
-                                            <i class="mdi mdi-arrow-right"></i>
-                                          </button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                      <div id="social-otherdetails" class="content">
-                                       <div class="content-header mb-3">
-                                        <h6 class="mb-0">Add new</h6>
-                                       </div>
-                                        <div class="row g-4">
-                                            <div class="col-12">
-                                                <form class="kanban-add-new-board">
-                                                  <label class="kanban-add-board-btn" for="kanban-add-board-input">
-                                                    <i class="mdi mdi-plus"></i>
-                                                    <span class="align-middle">Add new</span>
-                                                  </label>
-                                                  <input
-                                                    type="text"
-                                                    class="form-control w-px-250 kanban-add-board-input mb-3 d-none"
-                                                    placeholder="Add Board Title"
-                                                    id="kanban-add-board-input"
-                                                    required />
-                                                  <div class="mb-3 kanban-add-board-input d-none">
-                                                    <button class="btn btn-primary btn-sm me-2">Add</button>
-                                                    <button type="button" class="btn btn-outline-secondary btn-sm kanban-add-board-cancel-btn">
-                                                      Cancel
-                                                    </button>
-                                                  </div>
-                                                </form>
-                                            </div>
                                         <div class="col-12 d-flex justify-content-between">
-                                            <button class="btn btn-outline-secondary btn-prev">
+                                          <button class="btn btn-outline-secondary btn-prev">
                                             <i class="mdi mdi-arrow-left me-sm-1 me-0"></i>
                                             <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                                            </button>
-                                            <button class="btn btn-primary btn-submit">Submit</button>
-                                        </div>
-                                        </div>
+                                          </button>
+                                          <button class="btn btn-primary btn-submit">Submit</button>
+                                        </div> 
+                                       
+                                      </div>
                                     </div>
                                   </form>
                                 </div>

@@ -45,7 +45,7 @@
               <button class="btn btn-primary d-grid w-100">Send Reset Link</button>
             </form>
             <div class="text-center">
-              <a href="auth-login-cover.html" class="d-flex align-items-center justify-content-center">
+              <a href="#" class="d-flex align-items-center justify-content-center">
                 <i class="mdi mdi-chevron-left scaleX-n1-rtl mdi-24px"></i>
                 Back to login
               </a>

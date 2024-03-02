@@ -44,12 +44,12 @@
           </a>
         </li>
         <li class="menu-item">
-          <a href="#" class="menu-link">
+          <a href="branch_info.php" class="menu-link">
             <div data-i18n="Branch Info">Branch Info</div>
           </a>
         </li>
         <li class="menu-item">
-          <a href="#" class="menu-link">
+          <a href="bank_info.php" class="menu-link">
             <div data-i18n="Bank Info">Bank Info</div>
           </a>
         </li>
