@@ -4,11 +4,7 @@
 <link rel="stylesheet" href="assets/vendor/libs/bs-stepper/bs-stepper.css" />
 <link rel="stylesheet" href="assets/vendor/libs/bootstrap-select/bootstrap-select.css" />
 <link rel="stylesheet" href="assets/vendor/libs/select2/select2.css" />
-<!-- images uploads -->
-<link rel="stylesheet" href="assets/vendor/libs/@form-validation/umd/styles/index.min.css" />
-<link rel="stylesheet" href="assets/vendor/libs/animate-css/animate.css" />
-<link rel="stylesheet" href="assets/vendor/libs/sweetalert2/sweetalert2.css" />
-<!-- end images uploads -->
+
 
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
@@ -24,7 +20,10 @@
                 <div class="content-wrapper">
                     <!-- Content -->
                     <div class="container-xxl flex-grow-1 container-p-y">
-                        <h5 class="mb-4"><span class="text-muted fw-light">System Admin /</span> Company Info</h5>
+                        <h5 class=""><span class="text-muted fw-light">System Admin /</span> Company Info</h5>
+                        <div class="text-end">
+                            <button class="add-new btn btn-primary" tabindex="0" aria-controls="DataTables_Table_0" type="button"><span><i class="mdi mdi-plus me-0 me-sm-1"></i><span class="d-none d-sm-inline-block">Add</span></span></button>
+                        </div>
                         <div class="row">
                             <div class="col-12 mb-4">
                               <div
@@ -114,8 +113,15 @@
                                             <div class="col-md-4">
                                                 <div class="form-floating form-floating-outline">
                                                     <input class="form-control" type="text" id=""
-                                                        name="Company Name" value="Alias" placeholder="Company Name" autofocus />
+                                                        name="Company Name" value="" placeholder="Company Name" autofocus />
                                                     <label for="Company Name">Company Name</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-floating form-floating-outline">
+                                                    <input class="form-control" type="text" id=""
+                                                        name="Company ID" value="Alias" placeholder="Alias" autofocus />
+                                                    <label for="Company ID">Company Name</label>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
@@ -574,25 +580,17 @@
                                         <h6 class="mb-0">Add new</h6>
                                        </div>
                                         <div class="row g-4">
-                                            <div class="col-12">
-                                                <form class="kanban-add-new-board">
-                                                  <label class="kanban-add-board-btn" for="kanban-add-board-input">
-                                                    <i class="mdi mdi-plus"></i>
-                                                    <span class="align-middle">Add new</span>
-                                                  </label>
-                                                  <input
-                                                    type="text"
-                                                    class="form-control w-px-250 kanban-add-board-input mb-3 d-none"
-                                                    placeholder="Add Board Title"
-                                                    id="kanban-add-board-input"
-                                                    required />
-                                                  <div class="mb-3 kanban-add-board-input d-none">
-                                                    <button class="btn btn-primary btn-sm me-2">Add</button>
-                                                    <button type="button" class="btn btn-outline-secondary btn-sm kanban-add-board-cancel-btn">
-                                                      Cancel
-                                                    </button>
+
+                                           <div class="col-12">
+                                                <button class="btn btn-primary waves-effect waves-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                                  <i class="mdi mdi-plus me-1"></i>
+                                                  <span class="align-middle">Add</span>
+                                                </button>
+                                                <div class="collapse" id="collapseExample">
+                                                  <div class="d-flex p-3 border">
+                                                  
                                                   </div>
-                                                </form>
+                                                </div>
                                             </div>
                                         <div class="col-12 d-flex justify-content-between">
                                             <button class="btn btn-outline-secondary btn-prev">
@@ -630,15 +628,5 @@
 <script src="assets/vendor/libs/bs-stepper/bs-stepper.js"></script>
 <script src="assets/vendor/libs/bootstrap-select/bootstrap-select.js"></script>
 <script src="assets/vendor/libs/select2/select2.js"></script>
-<!-- Page JS -->
+<!-- Company Info tab JS -->
 <script src="assets/js/form-wizard-icons.js"></script>
-<!-- image uploads -->
- <script src="assets/vendor/libs/@form-validation/umd/bundle/popular.min.js"></script>
-<script src="assets/vendor/libs/@form-validation/umd/plugin-bootstrap5/index.min.js"></script>
-<script src="assets/vendor/libs/@form-validation/umd/plugin-auto-focus/index.min.js"></script>
-<script src="assets/vendor/libs/cleavejs/cleave.js"></script>
-<script src="assets/vendor/libs/cleavejs/cleave-phone.js"></script>
-<script src="assets/vendor/libs/sweetalert2/sweetalert2.js"></script>
-<!-- Page JS -->
-<script src="assets/js/pages-account-settings-account.js"></script>
-<!-- end image uploads -->

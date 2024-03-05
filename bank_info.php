@@ -25,6 +25,9 @@
                     <!-- Content -->
                     <div class="container-xxl flex-grow-1 container-p-y">
                         <h5 class="mb-4"><span class="text-muted fw-light">System Admin /</span> Bank Info</h5>
+                         <div class="text-end">
+                            <button class="add-new btn btn-primary" tabindex="0" aria-controls="DataTables_Table_0" type="button"><span><i class="mdi mdi-plus me-0 me-sm-1"></i><span class="d-none d-sm-inline-block">Add</span></span></button>
+                        </div>
                         <div class="row">
                             <div class="col-12 mb-4">
                               <div

@@ -20,7 +20,6 @@
         </svg>
       </a>
     </div>
-
     <div class="menu-inner-shadow"></div>
 
 <ul class="menu-inner py-1">
@@ -31,6 +30,13 @@
         <div data-i18n="Dashboards">Dashboards</div>
       </a>
     </li>
+     <li class="menu-item">
+      <a href="roles_right.php" class="menu-link">
+        <i class="menu-icon tf-icons mdi mdi-account-outline"></i>
+        <div data-i18n="Roles & Right">Roles & Right</div>
+      </a>
+    </li>
+
     <!-- Department menu start -->
      <li class="menu-item">
       <a href="javascript:void(0);" class="menu-link menu-toggle">
@@ -58,7 +64,6 @@
             <div data-i18n="Board Of Directors">Board Of Directors</div>
           </a>
         </li>
-
       </ul>
     </li>
     <li class="menu-item">
